@@ -1,0 +1,17 @@
+{
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview"
+  },
+  "devDependencies": {
+    "@nuxtjs/eslint-config-typescript": "^10.0.0",
+    "@nuxtjs/tailwindcss": "^5.1.2",
+    "@pinia/nuxt": "^0.1.9",
+    "nuxt": "3.0.0-rc.3",
+    "pinia": "^2.0.14"
+  },
+  "packageManager": "yarn@3.2.1"
+}
