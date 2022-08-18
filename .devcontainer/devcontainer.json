@@ -1,0 +1,27 @@
+{
+    "name": "Nuxt 3",
+    "build": {
+        "dockerfile": "Dockerfile",
+        "args": {
+            "VARIANT": "16"
+        }
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "eamodio.gitlens",
+                "dbaeumer.vscode-eslint",
+                "esbenp.prettier-vscode",
+                "Vue.volar"
+            ]
+        }
+    },
+    "forwardPorts": [
+        3000
+    ],
+    "mounts": [
+        "source=[VOLUME_NAME],target=${containerWorkspaceFolder}/node_modules,type=volume"
+    ],
+    "postCreateCommand": "sudo chown node node_modules && yarn install",
+    "remoteUser": "node"
+}
