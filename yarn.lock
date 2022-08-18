@@ -662,7 +662,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nuxt/kit@npm:3.0.0-rc.8, @nuxt/kit@npm:^3.0.0-rc.3, @nuxt/kit@npm:^3.0.0-rc.4, @nuxt/kit@npm:^3.0.0-rc.5":
+"@nuxt/kit@npm:3.0.0-rc.8, @nuxt/kit@npm:^3.0.0-rc.3, @nuxt/kit@npm:^3.0.0-rc.4, @nuxt/kit@npm:^3.0.0-rc.5, @nuxt/kit@npm:^3.0.0-rc.6, @nuxt/kit@npm:^3.0.0-rc.8":
   version: 3.0.0-rc.8
   resolution: "@nuxt/kit@npm:3.0.0-rc.8"
   dependencies:
@@ -1122,6 +1122,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/web-bluetooth@npm:^0.0.15":
+  version: 0.0.15
+  resolution: "@types/web-bluetooth@npm:0.0.15"
+  checksum: 4e3b3b1c0baf6735690ce0c5ffaac53de3dbd16362316cbc5e32970bcb1e1baf16dae0a9f30fe86256ad0ee22a4533423f443835273efc54b15235086ebda85b
+  languageName: node
+  linkType: hard
+
 "@typescript-eslint/eslint-plugin@npm:^5.21.0":
   version: 5.33.1
   resolution: "@typescript-eslint/eslint-plugin@npm:5.33.1"
@@ -1428,12 +1435,91 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@vueuse/core@npm:9.1.0, @vueuse/core@npm:^9.1.0":
+  version: 9.1.0
+  resolution: "@vueuse/core@npm:9.1.0"
+  dependencies:
+    "@types/web-bluetooth": ^0.0.15
+    "@vueuse/metadata": 9.1.0
+    "@vueuse/shared": 9.1.0
+    vue-demi: "*"
+  checksum: 41a7d3a247ef007908028804923767c20bef7417491a762420a2f4a3da8f7a14da80f5126afaf545fddfa5c77e75cd96c966c884fd4627d8c8a082caecc21386
+  languageName: node
+  linkType: hard
+
 "@vueuse/head@npm:^0.7.9":
   version: 0.7.9
   resolution: "@vueuse/head@npm:0.7.9"
   peerDependencies:
     vue: ">=3"
   checksum: 2b8078a4e7c1f797d74ff5ea9b80bffad8f24f6738aacfb2466d8f042814fbe6579f6afdca7071f3e24eba984391240e481adb3757d715b537737a8840d09859
+  languageName: node
+  linkType: hard
+
+"@vueuse/metadata@npm:9.1.0":
+  version: 9.1.0
+  resolution: "@vueuse/metadata@npm:9.1.0"
+  checksum: 128657916aaed7b2a011ed60a1213254ef49ed9b486e61925afdc16da887091e3c55803ee1a2a3beff0180a4acca8fba80bb862fc17b14b3ae5f9c61fed246d3
+  languageName: node
+  linkType: hard
+
+"@vueuse/nuxt@npm:^9.1.0":
+  version: 9.1.0
+  resolution: "@vueuse/nuxt@npm:9.1.0"
+  dependencies:
+    "@nuxt/kit": ^3.0.0-rc.6
+    "@vueuse/core": 9.1.0
+    "@vueuse/metadata": 9.1.0
+    local-pkg: ^0.4.2
+    vue-demi: "*"
+  checksum: d59f45fb378e16dbc306943960681de606b2895728f0e7938b16fe481a422053117d224c061c2f6c7a1c159e050d92f0b40a4f3a7674561b2a4643996f78a8eb
+  languageName: node
+  linkType: hard
+
+"@vueuse/schema-org-vite@npm:1.0.0-beta.16":
+  version: 1.0.0-beta.16
+  resolution: "@vueuse/schema-org-vite@npm:1.0.0-beta.16"
+  dependencies:
+    "@vueuse/schema-org": 1.0.0-beta.16
+    magic-string: ^0.26.2
+    mlly: ^0.5.12
+    pathe: ^0.3.4
+    schema-dts: ^1.1.0
+    unplugin: ^0.9.2
+  peerDependencies:
+    "@vueuse/head": ">=0.7"
+    unplugin-vue-components: ">=0.19"
+    vite: "*"
+    vite-ssg: "*"
+    vitepress: "*"
+  peerDependenciesMeta:
+    unplugin-vue-components:
+      optional: true
+    vite-ssg:
+      optional: true
+    vitepress:
+      optional: true
+  checksum: af000da528b975beace29e444003f4887a7658a5a53fbda9761352a9b32893ce2f5a282524726669129cbf5f40e191e1dbfc513aac214144ca11dfd131ea9d3a
+  languageName: node
+  linkType: hard
+
+"@vueuse/schema-org@npm:1.0.0-beta.16":
+  version: 1.0.0-beta.16
+  resolution: "@vueuse/schema-org@npm:1.0.0-beta.16"
+  dependencies:
+    schema-org-graph-js: 0.3.3
+  peerDependencies:
+    vue: ">=3.2.0"
+  checksum: 022205f9650b7d7ac48511808460ef01ca91af0c7871e14352296747a1173e6af4203e00f4f6f5cb1bfe414243c993a3716710465de332b6757440f7f4340fba
+  languageName: node
+  linkType: hard
+
+"@vueuse/shared@npm:9.1.0":
+  version: 9.1.0
+  resolution: "@vueuse/shared@npm:9.1.0"
+  dependencies:
+    vue-demi: "*"
+  checksum: 18aae2c37b1cfabc97f53c16300d5daf072a7a9d8a0ae98a77d14022ead47e33053307838d3d43100ec234b4cf8d5430a7e8be011869fd5eecac2a6dca7a1453
   languageName: node
   linkType: hard
 
@@ -6951,6 +7037,19 @@ __metadata:
   languageName: node
   linkType: hard
 
+"nuxt-schema-org@npm:^1.0.0-beta.16":
+  version: 1.0.0-beta.16
+  resolution: "nuxt-schema-org@npm:1.0.0-beta.16"
+  dependencies:
+    "@nuxt/kit": ^3.0.0-rc.8
+    "@vueuse/schema-org": 1.0.0-beta.16
+    "@vueuse/schema-org-vite": 1.0.0-beta.16
+    pathe: ^0.3.4
+    schema-org-graph-js: 0.3.3
+  checksum: 5252bf9abd89299daa6c5c045492203eeb52880a261a29d0c7e15f648c3c9e477021e0bcfe418cef79b958d6b8a7425d2620dd9ec9283e8594c93cf0fb8a08c8
+  languageName: node
+  linkType: hard
+
 "nuxt@npm:3.0.0-rc.8":
   version: 3.0.0-rc.8
   resolution: "nuxt@npm:3.0.0-rc.8"
@@ -8501,7 +8600,11 @@ __metadata:
     "@nuxtjs/eslint-config-typescript": ^10.0.0
     "@nuxtjs/tailwindcss": ^5.3.2
     "@pinia/nuxt": ^0.4.1
+    "@vueuse/core": ^9.1.0
+    "@vueuse/nuxt": ^9.1.0
+    ipx: ^0.9.10
     nuxt: 3.0.0-rc.8
+    nuxt-schema-org: ^1.0.0-beta.16
     pinia: ^2.0.19
   languageName: unknown
   linkType: soft
@@ -8567,6 +8670,28 @@ __metadata:
   version: 2.1.2
   resolution: "safer-buffer@npm:2.1.2"
   checksum: cab8f25ae6f1434abee8d80023d7e72b598cf1327164ddab31003c51215526801e40b66c5e65d658a0af1e9d6478cadcb4c745f4bd6751f97d8644786c0978b0
+  languageName: node
+  linkType: hard
+
+"schema-dts@npm:^1.1.0":
+  version: 1.1.0
+  resolution: "schema-dts@npm:1.1.0"
+  peerDependencies:
+    typescript: ">=4.1.0"
+  checksum: 546af6d8707790d666f64665b755a683166675c11195406e78e2ac875e7b6f1f550b4306449c8b00a5ef0384a487a7837eac7b8b3f00c2ca2c8f231d931507d4
+  languageName: node
+  linkType: hard
+
+"schema-org-graph-js@npm:0.3.3":
+  version: 0.3.3
+  resolution: "schema-org-graph-js@npm:0.3.3"
+  dependencies:
+    defu: ^6.0.0
+    ohash: ^0.1.5
+    schema-dts: ^1.1.0
+    ufo: ^0.8.5
+    utility-types: ^3.10.0
+  checksum: 679f757f65316c1d67822b3fee4ce01235006e97e1db47e2ead43a2088c530f0c0b0b06dcd728195a91eccc721ab74461b78d6005f33bf573c264644090a62c0
   languageName: node
   linkType: hard
 
@@ -9761,7 +9886,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"unplugin@npm:^0.9.0":
+"unplugin@npm:^0.9.0, unplugin@npm:^0.9.2":
   version: 0.9.3
   resolution: "unplugin@npm:0.9.3"
   dependencies:
@@ -9862,6 +9987,13 @@ __metadata:
   version: 1.0.2
   resolution: "util-deprecate@npm:1.0.2"
   checksum: 474acf1146cb2701fe3b074892217553dfcf9a031280919ba1b8d651a068c9b15d863b7303cb15bd00a862b498e6cf4ad7b4a08fb134edd5a6f7641681cb54a2
+  languageName: node
+  linkType: hard
+
+"utility-types@npm:^3.10.0":
+  version: 3.10.0
+  resolution: "utility-types@npm:3.10.0"
+  checksum: 8f274415c6196ab62883b8bd98c9d2f8829b58016e4269aaa1ebd84184ac5dda7dc2ca45800c0d5e0e0650966ba063bf9a412aaeaea6850ca4440a391283d5c8
   languageName: node
   linkType: hard
 
