@@ -855,6 +855,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@pinia/nuxt@npm:^0.4.1":
+  version: 0.4.1
+  resolution: "@pinia/nuxt@npm:0.4.1"
+  dependencies:
+    "@nuxt/kit": 3.0.0-rc.6
+    pinia: ">=2.0.19"
+  checksum: 80e598c307ee8097ac2d7e0231cf82bff6d4fba7b8f31023e1fb0db43fe446126a90d202314431b4f7cf018a18db3bf36826a3ed14c996f1f32d8b93013ac4ad
+  languageName: node
+  linkType: hard
+
 "@rollup/plugin-alias@npm:^3.1.9":
   version: 3.1.9
   resolution: "@rollup/plugin-alias@npm:3.1.9"
@@ -1349,7 +1359,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vue/devtools-api@npm:^6.1.4":
+"@vue/devtools-api@npm:^6.1.4, @vue/devtools-api@npm:^6.2.1":
   version: 6.2.1
   resolution: "@vue/devtools-api@npm:6.2.1"
   checksum: 34765af0be9b0cc7e3def73b2792b1514e3c348852c5a7503fe07d013f0e907af6c27c0a32c0637dd748caf37c075af8e53ca3220433e0bd34b6f3405f358272
@@ -7358,6 +7368,25 @@ __metadata:
   languageName: node
   linkType: hard
 
+"pinia@npm:>=2.0.19, pinia@npm:^2.0.19":
+  version: 2.0.19
+  resolution: "pinia@npm:2.0.19"
+  dependencies:
+    "@vue/devtools-api": ^6.2.1
+    vue-demi: "*"
+  peerDependencies:
+    "@vue/composition-api": ^1.4.0
+    typescript: ">=4.4.4"
+    vue: ^2.6.14 || ^3.2.0
+  peerDependenciesMeta:
+    "@vue/composition-api":
+      optional: true
+    typescript:
+      optional: true
+  checksum: 7881191cbea6b0dcb475f25b7296c280109aaf9a76033503a1e341f080753d7335455fcfd4084aeaada0117e5b6b8e3cc18e0f1fdbeb5569dc4aa8a7ab172359
+  languageName: node
+  linkType: hard
+
 "pkg-types@npm:^0.3.3":
   version: 0.3.3
   resolution: "pkg-types@npm:0.3.3"
@@ -8471,7 +8500,9 @@ __metadata:
     "@nuxt/image-edge": ^1.0.0-27657146.da85542
     "@nuxtjs/eslint-config-typescript": ^10.0.0
     "@nuxtjs/tailwindcss": ^5.3.2
+    "@pinia/nuxt": ^0.4.1
     nuxt: 3.0.0-rc.8
+    pinia: ^2.0.19
   languageName: unknown
   linkType: soft
 
@@ -10036,6 +10067,22 @@ __metadata:
   dependencies:
     ufo: ^0.8.3
   checksum: f2533b8c64b41136866cf1b33478253008f4a11fe3f1b26e2fc2388bdd79b96c988cfc6b9e9127565025d48049732d977bc67fcf05bf95fcfd428574adb8a2ad
+  languageName: node
+  linkType: hard
+
+"vue-demi@npm:*":
+  version: 0.13.8
+  resolution: "vue-demi@npm:0.13.8"
+  peerDependencies:
+    "@vue/composition-api": ^1.0.0-rc.1
+    vue: ^3.0.0-0 || ^2.6.0
+  peerDependenciesMeta:
+    "@vue/composition-api":
+      optional: true
+  bin:
+    vue-demi-fix: bin/vue-demi-fix.js
+    vue-demi-switch: bin/vue-demi-switch.js
+  checksum: 1fa8c4552109f6b046f6ec4097b5e5f43c95e10203a57cb62db8c0fc9f102cf25dfa5847dbcaf357aff315dbf08745a0aeb3032292acecdcb8f7ad311a628d39
   languageName: node
   linkType: hard
 
