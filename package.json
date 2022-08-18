@@ -6,6 +6,11 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview"
   },
+  "dependencies": {
+    "@pinia/nuxt": "^0.4.1",
+    "pinia": "^2.0.19",
+    "vue-query": "^1.25.2"
+  },
   "devDependencies": {
     "@nuxt/content": "^2.0.1",
     "@nuxt/image-edge": "^1.0.0-27657146.da85542",
@@ -13,13 +18,9 @@
     "@nuxtjs/tailwindcss": "^5.3.2",
     "@vueuse/core": "^9.1.0",
     "@vueuse/nuxt": "^9.1.0",
-    "ipx": "^0.9.10",
     "nuxt": "3.0.0-rc.8",
-    "nuxt-schema-org": "^1.0.0-beta.16"
+    "nuxt-schema-org": "^1.0.0-beta.16",
+    "nuxt-xstate": "^0.3.0"
   },
-  "packageManager": "yarn@3.2.2",
-  "dependencies": {
-    "@pinia/nuxt": "^0.4.1",
-    "pinia": "^2.0.19"
-  }
+  "packageManager": "yarn@3.2.2"
 }

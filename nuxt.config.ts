@@ -9,6 +9,7 @@ export default defineNuxtConfig({
         '@pinia/nuxt', // https://pinia.vuejs.org/
         '@vueuse/nuxt', // https://vueuse.org/
         'nuxt-schema-org', // https://vue-schema-org.netlify.app/
+        'nuxt-xstate', // https://nuxt-xstate.lexpeartha.com/
     ],
     content: {},
     schemaOrg: {
