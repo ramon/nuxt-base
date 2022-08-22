@@ -7,6 +7,7 @@
     "preview": "nuxt preview"
   },
   "dependencies": {
+    "@gtm-support/vue-gtm": "^1.6.0",
     "@pinia/nuxt": "^0.4.1",
     "pinia": "^2.0.19",
     "vue-query": "^1.25.2"

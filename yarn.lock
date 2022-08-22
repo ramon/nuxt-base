@@ -423,6 +423,31 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@gtm-support/core@npm:^1.4.0":
+  version: 1.4.0
+  resolution: "@gtm-support/core@npm:1.4.0"
+  checksum: f2eb65199b0d570dbe117cb6aa6f57bbb7980ab31cc28ad644875e9dcafb3d822c3be878641a0695a06b070af5447eedbe89b0b4a80ceda4cdb1364d37765196
+  languageName: node
+  linkType: hard
+
+"@gtm-support/vue-gtm@npm:^1.6.0":
+  version: 1.6.0
+  resolution: "@gtm-support/vue-gtm@npm:1.6.0"
+  dependencies:
+    "@gtm-support/core": ^1.4.0
+    vue-router: ^4.0.0
+  peerDependencies:
+    vue: ^3.0.0
+  dependenciesMeta:
+    vue-router:
+      optional: true
+  peerDependenciesMeta:
+    vue-router:
+      optional: true
+  checksum: 0ac0a2bdc7e6b20b2713cf4fb04db1aedd1849ff067e71a449caff1450b18490d8c6f7b0d3604f38394f1590477adccd3329ced0b5bc4ecc68d4aa8343a012f8
+  languageName: node
+  linkType: hard
+
 "@humanwhocodes/config-array@npm:^0.10.4":
   version: 0.10.4
   resolution: "@humanwhocodes/config-array@npm:0.10.4"
@@ -9024,6 +9049,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "root-workspace-0b6124@workspace:."
   dependencies:
+    "@gtm-support/vue-gtm": ^1.6.0
     "@nuxt/content": ^2.0.1
     "@nuxt/image-edge": ^1.0.0-27657146.da85542
     "@nuxtjs/eslint-config-typescript": ^10.0.0
@@ -10772,6 +10798,17 @@ __metadata:
     "@vue/composition-api":
       optional: true
   checksum: af43238bda4de6a45f54d5d848830e9b8e3239c5d46ff13f315bbde666b7dccda2152d16b0299eb9b174eb36207719626af0dfb41689bac57aa6a08992aecda5
+  languageName: node
+  linkType: hard
+
+"vue-router@npm:^4.0.0":
+  version: 4.1.4
+  resolution: "vue-router@npm:4.1.4"
+  dependencies:
+    "@vue/devtools-api": ^6.1.4
+  peerDependencies:
+    vue: ^3.2.0
+  checksum: 8e98a8d056ec6729f1decbf4c6cfa50744a50a4ef0ef247d41ae0ec00903dd9283a58de2025844894111f613450cb054b86f42158d172d029701c96f393be80d
   languageName: node
   linkType: hard
 

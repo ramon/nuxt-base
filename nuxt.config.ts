@@ -11,6 +11,11 @@ export default defineNuxtConfig({
     'nuxt-schema-org', // https://vue-schema-org.netlify.app/
     'nuxt-xstate' // https://nuxt-xstate.lexpeartha.com/
   ],
+  runtimeConfig: {
+    public: {
+      gtmId: ''
+    }
+  },
   content: {},
   schemaOrg: {
     canonicalHost: 'https://localhost:3000/'
