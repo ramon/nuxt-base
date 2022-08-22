@@ -1,27 +1,28 @@
-import { NuxtApp } from "#app";
 import {
-    dehydrate, hydrate, QueryClient, VueQueryPlugin,
-    VueQueryPluginOptions
-} from "vue-query";
+  dehydrate, hydrate, QueryClient, VueQueryPlugin,
+  VueQueryPluginOptions
+} from 'vue-query'
 
-export default (nuxt: NuxtApp): void => {
+export default defineNuxtPlugin((nuxtApp) => {
   // Modify your Vue Query global settings here
   const queryClient = new QueryClient({
-    defaultOptions: { queries: { staleTime: 1000 } },
-  });
-  const options: VueQueryPluginOptions = { queryClient };
+    defaultOptions: { queries: { staleTime: 1000 * 60 } }
+  })
+  const options: VueQueryPluginOptions = { queryClient }
 
-  nuxt.vueApp.use(VueQueryPlugin, options);
+  nuxtApp.vueApp.use(VueQueryPlugin, options)
 
   if (process.server) {
-    nuxt.hooks.hook("app:rendered", () => {
-      nuxt.nuxtState["vue-query"] = dehydrate(queryClient);
-    });
+    nuxtApp.hooks.hook('app:rendered', () => {
+      nuxtApp.vueQueryState = dehydrate(queryClient)
+    })
   }
 
   if (process.client) {
-    nuxt.hooks.hook("app:created", () => {
-      hydrate(queryClient, nuxt.nuxtState["vue-query"]);
-    });
+    nuxtApp.hooks.hook('app:created', () => {
+      if (nuxtApp.vueQueryState && nuxtApp.isHydrating) {
+        hydrate(queryClient, nuxtApp.vueQueryState)
+      }
+    })
   }
-};
+})
